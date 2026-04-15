@@ -1,0 +1,10 @@
+rclpy
+fastapi
+uvicorn[standard]
+pydantic
+python-dotenv
+psycopg2-binary
+sqlalchemy
+pytest
+pytest-cov
+pyyaml

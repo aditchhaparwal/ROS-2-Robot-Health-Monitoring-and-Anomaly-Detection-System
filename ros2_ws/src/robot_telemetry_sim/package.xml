@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>robot_telemetry_sim</name>
+  <version>0.1.0</version>
+  <description>Publishes simulated robot telemetry.</description>
+  <maintainer email="maintainer@example.com">Project Maintainer</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>robot_interfaces</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

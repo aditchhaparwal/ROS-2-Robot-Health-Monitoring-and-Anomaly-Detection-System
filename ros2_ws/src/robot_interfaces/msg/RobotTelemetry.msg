@@ -1,0 +1,9 @@
+std_msgs/Header header
+float32 battery_level
+float32 motor_temperature
+float32 joint_velocity
+float32 current_draw
+float32 vibration
+int32 error_code
+float32 cpu_load
+float32 memory_usage

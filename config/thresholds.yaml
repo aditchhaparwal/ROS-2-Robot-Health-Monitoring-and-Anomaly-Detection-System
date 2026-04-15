@@ -1,0 +1,28 @@
+battery_level:
+  min: 20.0
+motor_temperature:
+  max: 85.0
+joint_velocity:
+  max: 6.0
+current_draw:
+  max: 18.0
+vibration:
+  max: 2.5
+cpu_load:
+  max: 90.0
+memory_usage:
+  max: 92.0
+
+drift:
+  window_size: 12
+  motor_temperature_delta: 8.0
+  current_draw_delta: 4.0
+  vibration_delta: 0.8
+
+spike:
+  window_size: 8
+  multiplier: 1.8
+
+error_codes:
+  critical: [101, 205, 500]
+  warning: [42, 78, 120]

@@ -1,0 +1,28 @@
+services:
+  monitor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: robot-monitor
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql+psycopg2://robot:robot@postgres:5432/robot_health
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:15
+    container_name: robot-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: robot
+      POSTGRES_PASSWORD: robot
+      POSTGRES_DB: robot_health
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
